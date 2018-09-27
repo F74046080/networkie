@@ -7,8 +7,6 @@ class LoadFromFile(object):
         """
         self.g = nx.Graph()
 
-        pass
-
     def from_edgelist(self, path):
         '''
         Read graph in edgelist txt format from `path`.
@@ -42,14 +40,13 @@ class LoadFromFile(object):
         
         Parameters
         ----------
-         
+
         Returns
         -------
         g: `NetworkX graph`
             The graph of the "In-class_network.txt"
 
         '''
-        import matplotlib.pyplot as plt
         import pandas as pd
         #f = open('In-class_network.txt','r')
         data = pd.read_csv('In-class_network.txt', sep="\t")
